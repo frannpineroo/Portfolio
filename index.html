@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Francisco Piñero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Bienvenido</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hola, soy <span class="highlight">Francisco Piñero</span></h1>
+                <h2>Desarrollador de Software</h2>
+                <p>Especializado en crear APIs robustas, bases de datos eficientes y arquitecturas escalables para aplicaciones web modernas.</p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-animation">
+                    <div class="code-line">const developer = {</div>
+                    <div class="code-line">  name: "Francisco Piñero",</div>
+                    <div class="code-line">  role: "Backend Developer",</div>
+                    <div class="code-line">  passion: "Clean Code"</div>
+                    <div class="code-line">};</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Soy un desarrollador backend apasionado por crear soluciones tecnológicas robustas y escalables. Me especializo en:</p>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-server"></i> Desarrollo de APIs RESTful y GraphQL</li>
+                        <li><i class="fas fa-database"></i> Diseño y optimización de bases de datos</li>
+                        <li><i class="fas fa-cloud"></i> Arquitectura de microservicios</li>
+                        <li><i class="fas fa-shield-alt"></i> Seguridad y autenticación</li>
+                        <li><i class="fas fa-rocket"></i> Performance y escalabilidad</li>
+                    </ul>
+                    <p>Con experiencia en múltiples tecnologías y frameworks, me enfoco en escribir código limpio, mantenible y bien documentado.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>3+</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+                    <div class="stat">
+                        <h3>20+</h3>
+                        <p>Proyectos Completados</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Tecnologías Principales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="aula_virtual.png" alt="Aula Virtual">
+                    </div>
+                    <div class="project-content">
+                        <h3>Aula Virtual</h3>
+                        <p>API RESTful completa para plataforma de comercio electrónico con autenticación JWT, gestión de productos y procesamiento de pagos.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/frannpineroo/classroom" class="btn btn-small btn-outline" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="gym.png" alt="GYM">
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestión de Gimnasio</h3>
+                        <p>Microservicio de gestión de usuarios con roles, permisos y autenticación multifactor. Incluye auditoría y logs de seguridad.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/frannpineroo/GimnasioVirtual" class="btn btn-small btn-outline" target="_blank">Ver en HitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="hanging.png" alt="Hanging">
+                    </div>
+                    <div class="project-content">
+                        <h3>Juego de Ahorcado</h3>
+                        <p>Backend para dashboard de analytics en tiempo real con procesamiento de datos masivos y APIs para visualizaciones.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Kafka</span>
+                            <span>Elasticsearch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/frannpineroo/hanging" class="btn btn-small btn-outline" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Herramientas y Tecnologías -->
+    <section id="herramientas" class="tools">
+        <div class="container">
+            <h2 class="section-title">Herramientas y Tecnologías</h2>
+            <div class="tools-grid">
+                <div class="tool-category">
+                    <h3>Lenguajes de Programación</h3>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Frameworks y Librerías</h3>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-seedling"></i>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Bases de Datos</h3>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Redis</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-server"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>DevOps y Cloud</h3>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-github"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¿Tienes un proyecto en mente?</h3>
+                    <p>Estoy siempre interesado en nuevos desafíos y oportunidades de colaboración. ¡Hablemos sobre cómo puedo ayudarte a construir tu próximo proyecto!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span href="mailto:franpinero11@gmail.com">franpinero11@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <span href="https://www.linkedin.com/in/frannpinero">linkedin.com/in/frannpinero</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span href="https://github.com/frannpineroo">github.com/frannpineroo</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Tu Nombre. Desarrollador Backend.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
